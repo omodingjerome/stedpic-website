@@ -12,14 +12,14 @@
 .nav-logo { font-size: 1.95rem; }
 .nav-descriptor { font-size: 0.6rem; margin-top: 5px; letter-spacing: 0.12em; }
 .nav-toggle span { width: 26px; }
-@media (min-width: 1181px) {
+@media (min-width: 1221px) {
   .nav-links { gap: 1.6rem; }
   .nav-links a { font-size: 0.9rem; letter-spacing: 0.04em; }
   .nav-cta { padding: 0.7rem 1.35rem; }
   .nav-member .ico { width: 18px; height: 18px; }
   .nav-avatar { width: 30px; height: 30px; font-size: 0.85rem; }
 }
-@media (min-width: 1181px) and (max-width: 1400px) { .nav-descriptor { display: none; } .nav-links { gap: 1.35rem; } }
+@media (min-width: 1221px) and (max-width: 1480px) { .nav-descriptor { display: none; } .nav-links { gap: 1.35rem; } }
 @media (max-width: 600px) { :root { --nav-h: 70px; } .nav-logo { font-size: 1.7rem; } }
 
 .wa-float {
@@ -310,3 +310,7 @@ button.linkish { background: none; border: 0; padding: 0; font: inherit; cursor:
 .faq-section { padding: 0; }
 .related { padding-left: 0; padding-right: 0; padding-bottom: 0; }
 .faq-section + .faq-section { margin-top: 2.25rem; }
+
+/* Current page in the top bar */
+.nav-links a[aria-current="page"] { color: #5bb3d0; }
+@media (min-width: 1221px) { .nav-links a[aria-current="page"] { box-shadow: inset 0 -2px 0 #5bb3d0; padding-bottom: 4px; } }

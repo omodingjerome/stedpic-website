@@ -1349,14 +1349,14 @@ section[id] { scroll-margin-top: var(--nav-h); }
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid #5bb3d0; outline-offset: 2px; }
 .interp-split { margin: 1.2rem -2rem -2rem; }
 
-/* ═════════ MOBILE MENU (≤1180px) ═════════ */
+/* ═════════ MOBILE MENU (≤1220px) ═════════ */
 .nav-toggle { display: none; width: 44px; height: 44px; margin-right: -10px; background: none; border: 0; cursor: pointer; flex-direction: column; align-items: center; justify-content: center; gap: 5px; }
 .nav-toggle span { display: block; width: 22px; height: 2px; background: #fff; border-radius: 2px; transition: transform 0.3s ease, opacity 0.2s ease; }
 .nav-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
 .nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-@media (max-width: 1180px) {
+@media (max-width: 1220px) {
   .nav-toggle { display: flex; }
   .nav-links {
     display: flex; position: fixed; top: var(--nav-h); left: 0; right: 0;
@@ -1464,7 +1464,7 @@ img.svc-card-img { height: auto; aspect-ratio: 16 / 10; margin-bottom: 1.5rem; b
 @media (max-width: 640px) { .services-grid { grid-template-columns: 1fr; } }
 
 /* ── HERO: breathing room above the red risks band ── */
-@media (min-width: 1181px) { .hero { padding-top: 120px; padding-bottom: 9rem; } .hero-stats { bottom: 4rem; } }
-@media (max-width: 1180px) { .hero { padding-bottom: 5.5rem; } }
+@media (min-width: 1221px) { .hero { padding-top: 120px; padding-bottom: 9rem; } .hero-stats { bottom: 4rem; } }
+@media (max-width: 1220px) { .hero { padding-bottom: 5.5rem; } }
 @media (max-width: 768px) { .hero { padding-bottom: 4.5rem; } }
 

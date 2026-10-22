@@ -14,7 +14,7 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && nav.classList.contains("nav-open")) { setMenu(false); toggle.focus(); }
 });
 document.addEventListener("click", (e) => { if (!nav.contains(e.target)) setMenu(false); });
-matchMedia("(min-width: 1181px)").addEventListener("change", (e) => { if (e.matches) setMenu(false); });
+matchMedia("(min-width: 1221px)").addEventListener("change", (e) => { if (e.matches) setMenu(false); });
 
 const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 10);
 window.addEventListener("scroll", onScroll, { passive: true });
@@ -80,4 +80,12 @@ if (slot) {
   };
   subscribeMember(render);
   render();
+}
+
+// Mark the current page in the nav (Home / Blog / FAQ; a post counts as Blog).
+{
+  const path = location.pathname.replace(/^\//, "") || "index.html";
+  const page = path === "index.html" ? "home" : path === "post.html" || path === "blog.html" ? "blog" : path === "faq.html" ? "faq" : null;
+  const link = page && document.querySelector(`.nav-links a[data-page="${page}"]`);
+  if (link) link.setAttribute("aria-current", "page");
 }
