@@ -1,0 +1,37 @@
+{
+  "currency": "USD",
+  "plans": [
+    {
+      "name": "The Buyer's Shield",
+      "type": "one-time",
+      "billingCycle": null,
+      "price": "265.00",
+      "description": "Don't send money before we send you the truth. Ideal for: Diaspora members about to buy land.",
+      "perks": ["Ownership Verification Report", "Land Verification Survey"]
+    },
+    {
+      "name": "The Owner's Guard",
+      "type": "one-time",
+      "billingCycle": null,
+      "price": "610.00",
+      "description": "Lock your land. Block the fraudsters. Ideal for: Owners who want full protection.",
+      "perks": ["Land Verification Survey", "Protective Caveat", "Property Intelligence Report"]
+    },
+    {
+      "name": "Full Confidence Package",
+      "type": "one-time",
+      "billingCycle": null,
+      "price": "875.00",
+      "description": "Everything you need — without setting foot on it. Ideal for: Serious investors & first-time buyers.",
+      "perks": ["Ownership Verification Report", "Land Verification Survey", "Protective Caveat", "Property Intelligence Report"]
+    },
+    {
+      "name": "Property Watch",
+      "type": "recurring",
+      "billingCycle": { "period": "MONTH", "count": 3 },
+      "price": "130.00",
+      "description": "We visit your land on a regular schedule and send you a full Property Intelligence Report — aerial photos, ground inspection, written findings and recommendations.",
+      "perks": ["Scheduled site visit", "Aerial photos", "Ground inspection", "Written findings & recommendations"]
+    }
+  ]
+}

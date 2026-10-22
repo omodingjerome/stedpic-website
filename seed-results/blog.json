@@ -1,0 +1,53 @@
+{
+  "posts": [
+    {
+      "id": "9b7acb98-ffe8-49fe-9dc3-95d1281b0c82",
+      "index": 0,
+      "success": true
+    },
+    {
+      "id": "49355bee-662c-4382-aa50-4c83f30360e2",
+      "index": 1,
+      "success": true
+    },
+    {
+      "id": "e8313344-aca2-466f-a4fe-9d40296d891c",
+      "index": 2,
+      "success": true
+    }
+  ],
+  "categories": [
+    {
+      "id": "9adfd467-0b62-45ee-b7d4-c5a163141662",
+      "name": "Buying Land"
+    },
+    {
+      "id": "afe5195c-1f70-4c8c-ac77-7a5e0004c1bb",
+      "name": "Protecting Your Land"
+    }
+  ],
+  "tags": [
+    {
+      "id": "9653c812-7c05-4621-bed9-44da7f382e4e",
+      "name": "diaspora"
+    },
+    {
+      "id": "962288a4-1bda-4e4a-875d-3057aab9120d",
+      "name": "due diligence"
+    },
+    {
+      "id": "18944a68-7c74-4ed5-9fe5-9f5d2c9d4491",
+      "name": "caveat"
+    },
+    {
+      "id": "afdaab43-7dbd-449a-b0d0-011509967855",
+      "name": "land protection"
+    },
+    {
+      "id": "95ce3b44-b0c6-4530-afc0-fc3ca30a168b",
+      "name": "survey"
+    }
+  ],
+  "coversAttached": 3,
+  "relinkedPosts": 0
+}

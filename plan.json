@@ -1,0 +1,47 @@
+{
+  "forms": [
+    {
+      "name": "Service Request",
+      "submitText": "Send my request",
+      "thankYou": "Thank you — your request has reached the StedPic team.\nWe'll be in touch by email or WhatsApp to confirm the details and scope before we begin.",
+      "fields": [
+        { "label": "First name", "kind": "firstName", "required": true },
+        { "label": "Last name", "kind": "lastName", "required": true },
+        { "label": "Email", "kind": "email", "required": true },
+        { "label": "Phone / WhatsApp", "kind": "phone" },
+        { "label": "Where do you live?", "kind": "text", "placeholder": "e.g. Maryland, USA" },
+        {
+          "label": "Service you need",
+          "kind": "select",
+          "required": true,
+          "choices": [
+            "The Buyer's Shield (package)",
+            "The Owner's Guard (package)",
+            "Full Confidence Package",
+            "Property Watch (subscription)",
+            "StedPic Guardian (property management)",
+            "Ownership Verification Report",
+            "Protective Caveat",
+            "Land Verification Survey",
+            "Property Intelligence Report",
+            "Title Creation & Registration",
+            "Ownership Transfer & Securing",
+            "Land Subdivision & Title Structuring",
+            "Property Sales Representation",
+            "Property Acquisition & Advisory",
+            "Not sure — please advise me"
+          ]
+        },
+        {
+          "label": "Where is the property?",
+          "kind": "select",
+          "required": true,
+          "choices": ["Kampala", "Wakiso", "Mukono", "Jinja", "Luwero", "Mpigi"],
+          "other": true
+        },
+        { "label": "Title / plot details", "kind": "text", "placeholder": "Block and plot number, or title number, if you have them" },
+        { "label": "Tell us about your situation", "kind": "textarea" }
+      ]
+    }
+  ]
+}

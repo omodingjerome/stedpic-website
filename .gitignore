@@ -1,0 +1,16 @@
+
+# local env (pulled from Wix)
+.env.local
+.env
+
+# Wix CLI logs and local tooling
+.wix/
+.claude/launch.json
+.claude/skills/
+
+# Wix skills — reinstall with: npx skills add wix/skills (versions pinned in skills-lock.json)
+.agents/
+
+# OS / editor
+.DS_Store
+Thumbs.db

@@ -1,0 +1,55 @@
+{
+  "categories": ["Buying Land", "Protecting Your Land"],
+  "posts": [
+    {
+      "title": "4 Risks Every Diaspora Land Buyer in Uganda Should Know",
+      "category": "Buying Land",
+      "tags": ["diaspora", "due diligence"],
+      "coverImagePath": "site/img/work-location.jpg",
+      "content": [
+        { "type": "paragraph", "text": "You worked hard abroad and you want to build something back home. But buying land from thousands of miles away comes with real risks — and the people who exploit them know the diaspora can't easily check." },
+        { "type": "heading", "text": "1. Fake or disputed titles", "level": 2 },
+        { "type": "paragraph", "text": "A seller shows you a seemingly valid title — but it's forged, already sold to someone else, or has an existing caveat you don't know about." },
+        { "type": "heading", "text": "2. Wrong size, wrong location", "level": 2 },
+        { "type": "paragraph", "text": "You pay for 100 by 100 ft and get 89 by 100. Or the land on the title is in a completely different location from the plot you were shown." },
+        { "type": "heading", "text": "3. Encroachment and land grabbing", "level": 2 },
+        { "type": "paragraph", "text": "Neighbours slowly shift beacons. Developers build on your land. Relatives occupy your plot. Many owners only find out years later." },
+        { "type": "heading", "text": "4. No eyes on the ground", "level": 2 },
+        { "type": "paragraph", "text": "You've invested your savings but have no regular way to check the property, verify its condition, or know when something changes." },
+        { "type": "quote", "text": "Don't send money before we send you the truth." },
+        { "type": "paragraph", "text": "An ownership verification and a land verification survey before you pay answer the first two risks. A protective caveat and regular Property Watch visits answer the last two." }
+      ]
+    },
+    {
+      "title": "What Is a Protective Caveat — and Why Owners Abroad Use One",
+      "category": "Protecting Your Land",
+      "tags": ["caveat", "land protection"],
+      "coverImagePath": "site/img/svc-caveat.jpg",
+      "content": [
+        { "type": "paragraph", "text": "When you live abroad, the biggest fear is that someone deals in your land while you're not looking. A protective caveat is one of the strongest tools against that." },
+        { "type": "heading", "text": "What a caveat does", "level": 2 },
+        { "type": "paragraph", "text": "A caveat is a legally registered notice on your title. It blocks anyone from selling, transferring, or dealing in your land without your knowledge." },
+        { "type": "heading", "text": "What you receive", "level": 2 },
+        { "type": "bulleted", "items": ["A registered legal caveat", "Protection against unauthorized dealings", "Confirmation documentation", "Ongoing protection status"] },
+        { "type": "heading", "text": "Who it's for", "level": 2 },
+        { "type": "paragraph", "text": "Owners who already hold land and want it locked down — especially if family members or caretakers are looking after it while you're away. It is part of The Owner's Guard and the Full Confidence Package, or can be ordered on its own." }
+      ]
+    },
+    {
+      "title": "Title Search vs. Land Survey: Why You Need Both",
+      "category": "Buying Land",
+      "tags": ["due diligence", "survey"],
+      "coverImagePath": "site/img/svc-survey.jpg",
+      "content": [
+        { "type": "paragraph", "text": "Many buyers think a clean title search is enough. It isn't — a title can be perfectly real and still describe land that isn't the plot you were shown." },
+        { "type": "heading", "text": "What a title search tells you", "level": 2 },
+        { "type": "paragraph", "text": "An Ownership Verification Report confirms who legally owns the land, whether it's disputed, and whether there are caveats, liens or fraud flags on it." },
+        { "type": "heading", "text": "What a survey tells you", "level": 2 },
+        { "type": "paragraph", "text": "A Land Verification Survey confirms the land exists where the title says and that its size and boundaries are what you were promised — with GPS confirmation, boundary opening and an encroachment check." },
+        { "type": "heading", "text": "Why together", "level": 2 },
+        { "type": "bulleted", "items": ["The title search proves the seller can sell.", "The survey proves the land is the right plot, in the right place, at the right size."] },
+        { "type": "paragraph", "text": "That's why The Buyer's Shield combines both — and why we explain the results in plain language, not registry jargon." }
+      ]
+    }
+  ]
+}

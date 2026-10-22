@@ -1,0 +1,102 @@
+{
+  "categories": [
+    {
+      "id": "18394a1e-09cb-4fff-90aa-5df5cfdc96e5",
+      "title": "Buying land from abroad",
+      "created": true,
+      "questions": 3
+    },
+    {
+      "id": "4bd24716-56bd-4262-af81-38af2a128e4e",
+      "title": "Our services & process",
+      "created": true,
+      "questions": 4
+    },
+    {
+      "id": "44e9527d-9ee2-4d57-b1df-dcdbbe0c3b9a",
+      "title": "Pricing & payment",
+      "created": true,
+      "questions": 2
+    }
+  ],
+  "questionsCreated": 9,
+  "questionsSkipped": 0,
+  "questionsFailed": 0,
+  "created": [
+    {
+      "category": "Buying land from abroad",
+      "question": "Do I need to be in Uganda to use StedPic?",
+      "id": "b3347282-c999-47a0-9f11-5c00c6a24fa5",
+      "slug": "do-i-need-to-be-in"
+    },
+    {
+      "category": "Buying land from abroad",
+      "question": "What should I check before I send money for land?",
+      "id": "19ef1536-a8f9-4a4e-8d1c-59563639a4b9",
+      "slug": "what-should-i-check"
+    },
+    {
+      "category": "Buying land from abroad",
+      "question": "Which districts do you cover?",
+      "id": "e460d3d8-a162-4a3e-9692-4a5bbffbab4d",
+      "slug": "which-districts-do"
+    },
+    {
+      "category": "Our services & process",
+      "question": "What is a protective caveat?",
+      "id": "28bb4237-f8f3-471e-8a1f-143648c2f82a",
+      "slug": "what-is-a-protective"
+    },
+    {
+      "category": "Our services & process",
+      "question": "How long does it take to get my report?",
+      "id": "61109425-fa33-48b1-9195-3ccd84acbe6f",
+      "slug": "how-long-does-it"
+    },
+    {
+      "category": "Our services & process",
+      "question": "Are your surveyors licensed?",
+      "id": "84c24d8a-58ac-49d7-8ccb-e1965bc3e235",
+      "slug": "are-your-surveyors"
+    },
+    {
+      "category": "Our services & process",
+      "question": "How do I know whose side you're on?",
+      "id": "9d978db8-a839-4523-9cb9-02606d85b20a",
+      "slug": "how-do-i-know-whose"
+    },
+    {
+      "category": "Pricing & payment",
+      "question": "How much do your services cost?",
+      "id": "04be702d-513c-49d9-8477-06ac5a1b9953",
+      "slug": "how-much-do-your"
+    },
+    {
+      "category": "Pricing & payment",
+      "question": "Can I talk to someone before I decide?",
+      "id": "f9cea288-01c1-4e13-9912-4b02ea10795e",
+      "slug": "can-i-talk-to"
+    }
+  ],
+  "skipped": [],
+  "failed": [],
+  "questionsOnSite": 15,
+  "preexisting": [
+    {
+      "id": "6c6a9707-a64e-46ec-ab90-92f48bf3359a",
+      "title": "General",
+      "questions": 3
+    },
+    {
+      "id": "cbe22c04-9946-426d-86c9-3f4ea9e04ae9",
+      "title": "Setting up FAQs",
+      "questions": 3
+    }
+  ],
+  "dashboardUrl": "https://manage.wix.com/dashboard/e5246f65-2d5c-43d5-a370-26fd7035ef03/app/14c92d28-031e-7910-c9a8-a670011e062d",
+  "docs": [
+    "https://dev.wix.com/docs/rest/business-management/faq-app/faq/category-v2/create-category",
+    "https://dev.wix.com/docs/rest/business-management/faq-app/faq/question-entry-v2/create-question-entry",
+    "https://dev.wix.com/docs/rest/business-management/faq-app/faq/question-entry-v2/query-question-entries"
+  ]
+}

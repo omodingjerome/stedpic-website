@@ -1,0 +1,83 @@
+// Mobile menu, nav shadow on scroll, and reveal-on-scroll transitions.
+const nav = document.querySelector("nav");
+const toggle = document.querySelector(".nav-toggle");
+const links = document.getElementById("nav-links");
+
+function setMenu(open) {
+  nav.classList.toggle("nav-open", open);
+  toggle.setAttribute("aria-expanded", String(open));
+  toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+}
+toggle.addEventListener("click", () => setMenu(!nav.classList.contains("nav-open")));
+links.addEventListener("click", (e) => { if (e.target.closest("a")) setMenu(false); });
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && nav.classList.contains("nav-open")) { setMenu(false); toggle.focus(); }
+});
+document.addEventListener("click", (e) => { if (!nav.contains(e.target)) setMenu(false); });
+matchMedia("(min-width: 1181px)").addEventListener("change", (e) => { if (e.matches) setMenu(false); });
+
+const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 10);
+window.addEventListener("scroll", onScroll, { passive: true });
+onScroll();
+
+// Reveal blocks as they scroll into view. Without JS, or with reduced motion, everything just shows.
+const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (!reduced && "IntersectionObserver" in window) {
+  const selector = [
+    ".why-header", ".packages-header", ".services-header", ".work-header", ".pm-header-row",
+    ".persona-section .section-title", ".persona-section .section-sub",
+    ".how-section .section-title", ".how-section .section-sub",
+    ".testimonials-section .section-title", ".contact-section .section-title",
+    ".arms-section .inner > div:first-child", ".cred-header", ".fear-headline",
+    ".fear-card", ".why-card", ".cred-card", ".pkg-card", ".svc-card", ".arm-col", ".pm-promise",
+    ".work-item", ".persona-story", ".checklist-panel", ".step", ".testimonial-card", ".trust-item",
+    ".contact-info", ".contact-form", ".addon-card", ".indep-strip", ".pm-included", ".pm-cta-band",
+    ".arms-honesty", ".fear-cta",
+  ].join(",");
+  const items = [...document.querySelectorAll(selector)];
+  for (const el of items) {
+    el.classList.add("reveal");
+    const siblings = [...el.parentElement.children].filter((c) => c.classList.contains("reveal"));
+    el.style.setProperty("--reveal-delay", `${(siblings.indexOf(el) % 4) * 90}ms`);
+  }
+  const io = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      entry.target.classList.add("in");
+      io.unobserve(entry.target);
+    }
+  }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+  items.forEach((el) => io.observe(el));
+  document.documentElement.classList.add("reveal-ready");
+}
+
+// Member control in the nav: a skeleton while the session read settles, "Sign in" for a visitor,
+// the member's initial/photo + "My account" for a member. The store is one per page; the first
+// subscriber starts the session read.
+import { subscribeMember, getMemberState } from "./wix/member-store.js";
+
+const slot = document.getElementById("nav-member");
+if (slot) {
+  const here = () => `${location.pathname.replace(/^\//, "") || "index.html"}${location.search}`;
+  const render = () => {
+    const { loading, loggedIn, member } = getMemberState();
+    if (loading) { slot.innerHTML = '<span class="nav-member-skeleton" aria-label="Loading account"></span>'; return; }
+    slot.replaceChildren();
+    const a = document.createElement("a");
+    if (!loggedIn) {
+      a.href = `login.html?returnTo=${encodeURIComponent("/" + here())}`;
+      a.innerHTML = '<svg class="ico" aria-hidden="true"><use href="img/icons.svg#i-log-in"/></svg>';
+      a.append("Sign in");
+    } else {
+      a.href = "account.html";
+      const av = document.createElement("span");
+      av.className = "nav-avatar";
+      if (member?.photoUrl) { const img = document.createElement("img"); img.src = member.photoUrl; img.alt = ""; av.append(img); }
+      else av.textContent = (member?.displayName || "M").charAt(0);
+      a.append(av, "My account");
+    }
+    slot.append(a);
+  };
+  subscribeMember(render);
+  render();
+}

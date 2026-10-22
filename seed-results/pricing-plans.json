@@ -1,0 +1,26 @@
+{
+  "plans": [
+    {
+      "id": "3b1e469c-1179-48fb-9ab9-3d6eb932b5db",
+      "slug": "the-buyers-shield",
+      "name": "The Buyer's Shield"
+    },
+    {
+      "id": "000b7bb0-ac49-44f8-999b-b1e8db7be714",
+      "slug": "the-owners-guard",
+      "name": "The Owner's Guard"
+    },
+    {
+      "id": "818aefb0-6a33-48ea-9a7e-c7191578f73d",
+      "slug": "full-confidence-package",
+      "name": "Full Confidence Package"
+    },
+    {
+      "id": "76532425-94bc-4d36-9751-142a2196b0da",
+      "slug": "property-watch",
+      "name": "Property Watch"
+    }
+  ],
+  "coverageAttached": [],
+  "benefitsCreated": 0
+}

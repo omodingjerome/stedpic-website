@@ -1,0 +1,38 @@
+{
+  "services": [
+    {
+      "id": "2b7b5e39-c0a0-44d2-80f0-2518206226be",
+      "slug": "free-consultation-call",
+      "revision": "1",
+      "type": "APPOINTMENT",
+      "scheduleId": "61e1f3a3-cc67-4529-bb98-82b9698514e9",
+      "success": true
+    },
+    {
+      "id": "2cd5080d-0aca-4ab3-8ab3-478b7a68d902",
+      "slug": "free-property-assessment-call",
+      "revision": "1",
+      "type": "APPOINTMENT",
+      "scheduleId": "36204dba-25b7-4cfc-a990-f8a4472d95d6",
+      "success": true
+    }
+  ],
+  "categories": [
+    {
+      "id": "042c062f-a191-49b8-af14-0bc091ac27cc",
+      "name": "Consultations"
+    }
+  ],
+  "staff": [
+    {
+      "resourceId": "cb7b873c-fb1b-4662-af44-1bf8af375eda",
+      "id": "c3e20114-bc68-46d7-af19-b297c221ba53",
+      "name": "Business Owner"
+    }
+  ],
+  "locations": [],
+  "resourceId": "cb7b873c-fb1b-4662-af44-1bf8af375eda",
+  "sessionsScheduled": 0,
+  "sessionErrors": [],
+  "imagesAttached": 2
+}

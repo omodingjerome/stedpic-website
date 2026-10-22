@@ -1,0 +1,74 @@
+{
+  "categories": [
+    {
+      "title": "Buying land from abroad",
+      "questions": [
+        {
+          "question": "Do I need to be in Uganda to use StedPic?",
+          "answer": "No. Everything is delivered online — you receive your reports, photos, GPS data and recommendations on any device, anywhere in the world. Our team is based in both Uganda and the United States."
+        },
+        {
+          "question": "What should I check before I send money for land?",
+          "answer": [
+            { "type": "paragraph", "text": "Before you send any money, make sure you can answer yes to each of these:" },
+            { "type": "bulleted", "items": [
+              "Is the title legally verified — real, untampered, and in the seller's name?",
+              "Is there an existing caveat on the land?",
+              "Does the land physically exist where the title says?",
+              "Is the size correct, with the boundaries opened and measured?",
+              "Have you seen it — with aerial and ground photos?",
+              "Is it legally protected against fraud?"
+            ] },
+            { "type": "paragraph", "text": "The Buyer's Shield and Full Confidence packages are built to answer these for you." }
+          ]
+        },
+        {
+          "question": "Which districts do you cover?",
+          "answer": "We currently serve Kampala, Wakiso, Mukono, Jinja, Luwero and Mpigi. If your land is elsewhere, contact us and we'll tell you what's possible."
+        }
+      ]
+    },
+    {
+      "title": "Our services & process",
+      "questions": [
+        {
+          "question": "What is a protective caveat?",
+          "answer": "A legally registered notice on your title that blocks anyone from selling, transferring, or dealing in your land without your knowledge — protecting your investment while you're abroad."
+        },
+        {
+          "question": "How long does it take to get my report?",
+          "answer": [
+            { "type": "ordered", "items": [
+              "Day 1 — you submit your order.",
+              "Day 1–2 — we verify your details and agree the scope.",
+              "Day 2–7 — our team works on the ground and with the relevant authorities.",
+              "Day 7–14 — your complete report arrives digitally."
+            ] },
+            { "type": "paragraph", "text": "You receive progress updates throughout." }
+          ]
+        },
+        {
+          "question": "Are your surveyors licensed?",
+          "answer": "Yes. Every survey is conducted by surveyors licensed and registered with the Surveyors Registration Board of Uganda, and your survey report carries the official SRB stamp."
+        },
+        {
+          "question": "How do I know whose side you're on?",
+          "answer": "We keep two roles openly separate. Our verification work (ownership checks, surveys, Property Intelligence Reports, caveats and StedPic Guardian) carries no sales agenda. When we act as your buyer's or seller's agent, it is commission-based and we tell you so upfront."
+        }
+      ]
+    },
+    {
+      "title": "Pricing & payment",
+      "questions": [
+        {
+          "question": "How much do your services cost?",
+          "answer": "Packages start at $265 (The Buyer's Shield), $610 (The Owner's Guard) and $875 (Full Confidence Package). Property Watch is $130 per visit. Individual services start from $75. Title, transfer and subdivision work is quoted per job, and agent services are commission-based."
+        },
+        {
+          "question": "Can I talk to someone before I decide?",
+          "answer": "Yes — book a free consultation call online, or reach us on WhatsApp at +256 773 961113, on our US line at +1 240 898 8030, or by email at info.stedpic@gmail.com. A real person will respond."
+        }
+      ]
+    }
+  ]
+}

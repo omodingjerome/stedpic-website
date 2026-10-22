@@ -1,0 +1,50 @@
+{
+  "collections": [
+    {
+      "id": "caseStudies",
+      "displayName": "Case Studies",
+      "fields": [
+        { "key": "title", "type": "TEXT" },
+        { "key": "slug", "type": "TEXT" },
+        { "key": "summary", "type": "TEXT" },
+        { "key": "service", "type": "TEXT" },
+        { "key": "outcome", "type": "TEXT" },
+        { "key": "body", "type": "RICH_TEXT" },
+        { "key": "photo", "type": "IMAGE" },
+        { "key": "publishDate", "type": "DATE" }
+      ],
+      "items": [
+        {
+          "title": "The plot was 89 by 100 — not 100 by 100",
+          "slug": "plot-smaller-than-promised",
+          "summary": "A title search showed the land was smaller than the seller claimed — before any money was sent.",
+          "service": "Ownership Verification Report",
+          "outcome": "Fraud caught before any money was sent",
+          "body": "<h3>The situation</h3><p>A client abroad was about to buy a plot the seller described as 100 by 100 ft.</p><h3>What we found</h3><p>Our report showed the land was actually 89 by 100 — smaller than what the seller had said.</p><h3>The outcome</h3><p>The client walked away from the deal before sending any money.</p><blockquote>“StedPic saved me from abafele from Kampala!” — Paulo K.</blockquote>",
+          "photo": { "path": "site/img/work-boundary.jpg" },
+          "publishDate": "2026-10-22"
+        },
+        {
+          "title": "Confirming the seller was the rightful owner",
+          "slug": "seller-verified",
+          "summary": "After bad experiences buying land before, a client needed proof the seller had the right to sell.",
+          "service": "The Buyer's Shield",
+          "outcome": "Bought with confidence after verification",
+          "body": "<h3>The situation</h3><p>A client with past bad experiences buying land in Uganda wanted certainty before paying.</p><h3>What we found</h3><p>We confirmed the person selling was the rightful owner, with the right to sell.</p><h3>The outcome</h3><p>The client paid for the land with far less doubt and stress.</p><blockquote>“I paid for my land with less doubt and stress.” — Eric K.</blockquote>",
+          "photo": { "path": "site/img/svc-ownership.jpg" },
+          "publishDate": "2026-10-22"
+        },
+        {
+          "title": "An accidental encroachment, found and fixed",
+          "slug": "encroachment-resolved",
+          "summary": "Drone photos combined with a boundary survey showed an owner had accidentally encroached on a neighbour's plot.",
+          "service": "The Owner's Guard + Property Watch",
+          "outcome": "Encroachment found and resolved before it became a legal dispute",
+          "body": "<h3>The situation</h3><p>An owner had been misled by the previous owner about where the boundaries were.</p><h3>What we found</h3><p>Pictures integrated with the boundary survey results showed the owner had accidentally encroached on a neighbour's plot.</p><h3>The outcome</h3><p>The issue was resolved, and the owner is now subscribed to Property Watch.</p><blockquote>“The pictures integrated with the boundary survey results gave me a clear perspective.” — Angela M.</blockquote>",
+          "photo": { "path": "site/img/work-aerial.jpg" },
+          "publishDate": "2026-10-22"
+        }
+      ]
+    }
+  ]
+}

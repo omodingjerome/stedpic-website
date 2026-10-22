@@ -1,0 +1,27 @@
+{
+  "currency": "USD",
+  "services": [
+    {
+      "type": "APPOINTMENT",
+      "name": "Free Consultation Call",
+      "tagLine": "20 minutes with our team, online",
+      "description": "Tell us about the land you want to buy, already own, or want to check on. We'll explain your options and which service or package fits — before you spend anything.",
+      "free": true,
+      "duration": 20,
+      "category": "Consultations",
+      "conferencing": true,
+      "imagePath": "site/img/svc-intelligence.jpg"
+    },
+    {
+      "type": "APPOINTMENT",
+      "name": "Free Property Assessment Call",
+      "tagLine": "The first step of StedPic Guardian",
+      "description": "Every Guardian engagement begins with a thorough evaluation of your property — then a tailored proposal. No generic plans. No guesswork.",
+      "free": true,
+      "duration": 30,
+      "category": "Consultations",
+      "conferencing": true,
+      "imagePath": "site/img/svc-transfer.jpg"
+    }
+  ]
+}
