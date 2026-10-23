@@ -1215,7 +1215,8 @@ a.nav-brand, a.nav-logo { text-decoration: none; }
 
 
 /* ── CREDENTIALS BAND ── */
-.cred-section { background: var(--white); padding-top: 0; }
+.cred-section { background: var(--white); }
+.why-section + .cred-section { padding-top: 0; }
 .cred-band {
   background: var(--cream);
   border: 1.5px solid var(--cream-dark);
