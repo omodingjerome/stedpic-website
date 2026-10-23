@@ -403,3 +403,27 @@ button.linkish { background: none; border: 0; padding: 0; font: inherit; cursor:
 .blog-all { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.85rem 1.6rem; border: 1.5px solid var(--blue-light); border-radius: 6px; color: var(--blue-light); font-weight: 600; text-decoration: none; transition: background 0.25s, color 0.25s; }
 .blog-all .ico { width: 16px; height: 16px; }
 .blog-all:hover { background: var(--blue-light); color: #fff; }
+
+/* ── Property Management: light treatment (dark blue kept for the CTA only) ── */
+.pm-section { background: var(--white); }
+.pm-section + .case-section { background: var(--cream); }
+.pm-section .section-label { color: var(--blue-light); }
+.pm-section .section-title { color: var(--ink); }
+.pm-section .section-sub { color: #5a6472; }
+.pm-badge { background: var(--white); border: 1.5px solid var(--cream-dark); border-radius: 8px; color: var(--dark); font-weight: 600; padding: 0.7rem 1rem; }
+.pm-badge .ico { color: var(--blue-light); }
+.pm-promises { background: none; gap: 1.5rem; overflow: visible; margin-bottom: 1.75rem; }
+.pm-promise { background: var(--white); border: 1.5px solid var(--cream-dark); border-radius: 12px; padding: 2rem 1.8rem; transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; }
+.pm-promise:hover { background: var(--white); border-color: var(--blue-light); box-shadow: 0 14px 34px rgba(0,0,0,0.07); transform: translateY(-4px); }
+.pm-promise-icon { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 10px; background: rgba(0,115,164,0.1); color: var(--blue-light); font-size: 1.4rem; margin-bottom: 1.1rem; }
+.pm-promise-title { color: var(--ink); }
+.pm-promise-desc { color: #5a6472; font-size: 0.88rem; }
+.pm-included { background: var(--cream); border: none; border-radius: 12px; padding: 1.4rem 1.6rem; }
+.pm-included-label { color: var(--dark); }
+.pm-tag { background: var(--white); border: 1px solid var(--cream-dark); color: var(--dark); display: inline-flex; align-items: center; gap: 0.35rem; }
+.pm-tag .ico { color: var(--blue-light); }
+.pm-cta-band { background: var(--blue-dark); border: none; border-radius: 12px; }
+.pm-cta-text h3 { color: var(--white); }
+.pm-cta-text p { color: rgba(255,255,255,0.7); }
+.pm-cta-actions a:last-child { color: rgba(255,255,255,0.75) !important; }
+.pm-cta-actions a:last-child:hover { color: #fff !important; }
