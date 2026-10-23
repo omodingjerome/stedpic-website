@@ -15,7 +15,7 @@ if (orderId && GUID.test(orderId)) {
     el("p", { class: "auth-note" }, `Order reference: ${orderId}`),
   );
   const row = el("div", { style: "display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap" });
-  row.append(el("a", { class: "btn-primary", href: "/#contact" }, "Send us your property details →"), el("a", { class: "btn-outline", href: "/" }, "Back to the homepage"));
+  row.append(el("a", { class: "btn-primary", href: "contact.html" }, "Send us your property details →"), el("a", { class: "btn-outline", href: "/" }, "Back to the homepage"));
   box.append(row);
   root.replaceChildren(box);
 } else {

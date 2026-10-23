@@ -51,10 +51,10 @@ if (!reduced && "IntersectionObserver" in window) {
   document.documentElement.classList.add("reveal-ready");
 }
 
-// Mark the current page in the nav (Home / Blog / FAQ; a post counts as Blog).
+// Mark the current page in the nav (a post counts as Blog, a case study as Our Work).
 {
-  const path = location.pathname.replace(/^\//, "") || "index.html";
-  const page = path === "index.html" ? "home" : path === "post.html" || path === "blog.html" ? "blog" : path === "faq.html" ? "faq" : null;
+  const name = (location.pathname.split("/").pop() || "index.html").replace(/\.html$/, "") || "index";
+  const page = { index: "home", post: "blog", "case-study": "work" }[name] ?? name;
   const link = page && document.querySelector(`.nav-links a[data-page="${page}"]`);
   if (link) link.setAttribute("aria-current", "page");
 }

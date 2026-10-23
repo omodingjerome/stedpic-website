@@ -16,7 +16,7 @@ try {
   if (!item) {
     title.textContent = "Case study not found";
     const box = el("div", { class: "state-msg" }, "It may have been moved or removed. ");
-    box.append(el("a", { href: "/#case-studies" }, "See all case studies"));
+    box.append(el("a", { href: "work.html#case-studies" }, "See all case studies"));
     body.replaceChildren(box);
   } else {
     document.title = `${item.title} — StedPic Case Study`;
