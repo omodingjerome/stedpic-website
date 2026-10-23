@@ -325,3 +325,4 @@ button.linkish { background: none; border: 0; padding: 0; font: inherit; cursor:
 .auth-form .row2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .auth-card { min-width: 0; }
 @media (max-width: 480px) { .auth-form .row2 { grid-template-columns: minmax(0, 1fr); } }
+.side-cta .side-wa { color: rgba(255,255,255,0.8); }

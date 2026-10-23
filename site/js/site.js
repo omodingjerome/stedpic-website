@@ -51,37 +51,6 @@ if (!reduced && "IntersectionObserver" in window) {
   document.documentElement.classList.add("reveal-ready");
 }
 
-// Member control in the nav: a skeleton while the session read settles, "Sign in" for a visitor,
-// the member's initial/photo + "My account" for a member. The store is one per page; the first
-// subscriber starts the session read.
-import { subscribeMember, getMemberState } from "./wix/member-store.js";
-
-const slot = document.getElementById("nav-member");
-if (slot) {
-  const here = () => `${location.pathname.replace(/^\//, "") || "index.html"}${location.search}`;
-  const render = () => {
-    const { loading, loggedIn, member } = getMemberState();
-    if (loading) { slot.innerHTML = '<span class="nav-member-skeleton" aria-label="Loading account"></span>'; return; }
-    slot.replaceChildren();
-    const a = document.createElement("a");
-    if (!loggedIn) {
-      a.href = `login.html?returnTo=${encodeURIComponent("/" + here())}`;
-      a.innerHTML = '<svg class="ico" aria-hidden="true"><use href="img/icons.svg#i-log-in"/></svg>';
-      a.append("Sign in");
-    } else {
-      a.href = "account.html";
-      const av = document.createElement("span");
-      av.className = "nav-avatar";
-      if (member?.photoUrl) { const img = document.createElement("img"); img.src = member.photoUrl; img.alt = ""; av.append(img); }
-      else av.textContent = (member?.displayName || "M").charAt(0);
-      a.append(av, "My account");
-    }
-    slot.append(a);
-  };
-  subscribeMember(render);
-  render();
-}
-
 // Mark the current page in the nav (Home / Blog / FAQ; a post counts as Blog).
 {
   const path = location.pathname.replace(/^\//, "") || "index.html";

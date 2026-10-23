@@ -112,11 +112,11 @@ export function renderSidebar(container, { categories = [], tags = [], recent = 
 
   // Call to action
   const cta = el("section", { class: "side-cta" });
-  cta.append(el("h3", {}, "Buying land from abroad?"), el("p", {}, "Talk to us before you send money. The first call is free."));
-  const book = el("a", { class: "btn-primary", href: "book.html" }, "Book a free call →");
-  const wa = el("a", { class: "side-wa", href: "https://wa.me/256773961113", target: "_blank", rel: "noopener" });
-  wa.append(icon("message-circle"), "Or WhatsApp us");
-  cta.append(book, wa);
+  cta.append(el("h3", {}, "Buying land from abroad?"), el("p", {}, "Talk to us before you send money. A real person responds."));
+  const wa = el("a", { class: "btn-primary", href: "https://wa.me/256773961113", target: "_blank", rel: "noopener" }, "WhatsApp us →");
+  const email = el("a", { class: "side-wa", href: "mailto:info.stedpic@gmail.com" });
+  email.append(icon("mail"), "Or email us");
+  cta.append(wa, email);
   parts.push(cta);
 
   container.replaceChildren(...parts);
