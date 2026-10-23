@@ -94,8 +94,14 @@ if (blog) {
     .then(([{ posts }, cats]) => {
       blog.setAttribute("aria-busy", "false");
       if (!posts.length) { blog.closest("section").hidden = true; return; }
-      const grid = el("div", { class: "card-grid" });
-      grid.append(...posts.map((p) => postCard(p, cats)));
+      const grid = el("div", { class: "card-grid blog-home-grid" });
+      for (const p of posts) {
+        const card = postCard(p, cats);
+        const more = el("span", { class: "card-more" }, "Read more");
+        more.append(icon("arrow-right"));
+        card.querySelector(".card-body").append(more);
+        grid.append(card);
+      }
       blog.replaceChildren(grid);
     })
     .catch((e) => { blog.setAttribute("aria-busy", "false"); blog.replaceChildren(el("div", { class: "state-msg error" }, `Posts couldn't load. ${e?.message ?? ""}`)); });

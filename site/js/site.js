@@ -30,7 +30,7 @@ if (!reduced && "IntersectionObserver" in window) {
     ".testimonials-section .section-title", ".contact-section .section-title",
     ".arms-section .inner > div:first-child", ".cred-header", ".fear-headline",
     ".fear-card", ".why-card", ".cred-card", ".pkg-card", ".svc-card", ".arm-col", ".pm-promise",
-    ".work-item", ".persona-story", ".checklist-panel", ".step", ".testimonial-card", ".trust-item",
+    ".work-item", ".persona-story", ".checklist-panel", ".dp-card", ".dp-checklist", ".ts-feature", ".ts-card", ".step", ".testimonial-card", ".trust-item",
     ".contact-info", ".contact-form", ".addon-card", ".indep-strip", ".pm-included", ".pm-cta-band",
     ".arms-honesty", ".fear-cta",
   ].join(",");
